@@ -73,7 +73,7 @@ convertF = "mutation_a1.txt"
 
 run(`powershell /c Get-Content -Path $inputF "|" Out-File -FilePath .\\$convertF -Encoding utf8`)
 
-#run(`Get-Content -Path "D:\\docs_00\\probes\\HRR\\Patents\\$inputF"`)
+#run(`powershell /c Get-Content -Path D:\\docs_x\\$inputF`)
 
 #a = getP_mutations(inputF)
 a = getP_mutations(convertF)
