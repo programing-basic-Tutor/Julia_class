@@ -24,7 +24,7 @@ function writeData(dict_t, outf)
     af = basename(outf)
     if !(isfile(".\\test_02\\$af"))
         output_file = open(  ".\\test_02\\$af" ,"w")
-        for (mut, v) in md
+        for (mut, v) in dict_t
             write(output_file, @sprintf("%s\n", v))
             
         end
